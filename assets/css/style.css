@@ -78,7 +78,7 @@ body {
 @media screen and (max-width: 450px) {
     
     .relogio {
-        font-size: 2em;
+        font-size: 3em;
     }
     
     .container {
@@ -106,7 +106,7 @@ body {
 @media screen and (max-width: 300px) {
 
     .relogio {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .container {
