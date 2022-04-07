@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #18181B;
+    --primary-color-blue: #3575ff;
+}
+
+*{
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.container {
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 15px;
+}
+
+.relogio {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.botoes {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+
+.iniciar, .pausar, .zerar {
+    border: none;
+    padding: 10px;
+    width: 30%;
+    background-color: var(--primary-color);
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+}
+
+.iniciar:hover, .pausar:hover, .zerar:hover {
+    background-color: var(--primary-color-blue);
+}
+
+.pausado {
+    color: red;
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        max-width: 300px; 
+    }
+
+    .botoes {
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    .iniciar, .pausar, .zerar {
+        margin-bottom: 15px;
+        width: 40%;
+        background-color: var(--primary-color);
+    }
+
+    .iniciar:hover, .pausar:hover, .zerar:hover {
+        background-color: var(--primary-color);
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .container {
+        max-width: 250px; 
+    }
+
+    .botoes {
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    .iniciar, .pausar, .zerar {
+        margin-bottom: 15px;
+        width: 40%;
+        background-color: var(--primary-color);
+    }
+
+    .iniciar:hover, .pausar:hover, .zerar:hover {
+        background-color: var(--primary-color);
+    }
+
+}
+
+
+
+
